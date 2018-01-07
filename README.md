@@ -1,2 +1,1 @@
-# Processing
-A collection of my Processing (Java) based experiments.
+A collection of my Processing based experiments.
