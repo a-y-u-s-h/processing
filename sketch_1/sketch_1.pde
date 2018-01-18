@@ -1,4 +1,4 @@
-PImage monalisa; //<>//
+PImage monalisa; 
 int factor = 1;
 
 void setup() {
@@ -31,7 +31,7 @@ void draw() {
       float errB = oldB - newB;
 
 
-      int index = index(x+1, y  );
+      int index = index(x+1, y);
       color c = monalisa.pixels[index];
       float r = red(c);
       float g = green(c);
@@ -41,7 +41,7 @@ void draw() {
       b = b + errB * 7/16.0;
       monalisa.pixels[index] = color(r, g, b);
 
-      index = index(x-1, y+1  );
+      index = index(x-1, y+1);
       c = monalisa.pixels[index];
       r = red(c);
       g = green(c);
