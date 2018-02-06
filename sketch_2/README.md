@@ -1,8 +1,8 @@
-# Sketch 1 : 
-[Floyd-Steinberg Dithering](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering) : Mona Lisa
+# Sketch 2 : 
+[Metaballs](https://en.wikipedia.org/wiki/Metaballs) : Popcorn Explosions
 
-![Mona Lisa : Floyd-Steinberg Dithering](https://github.com/a-y-u-s-h/screenshots/blob/gh-pages/sketchez/sketch_1.png)
+![Popcorn Metaballs](https://github.com/a-y-u-s-h/screenshots/blob/gh-pages/sketchez/sketch_2.png)
 
-Uploaded image is of reduced quality.
+It's animated, so it's better if you just download the code and run it in Processing IDE.
 
 ***
