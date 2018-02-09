@@ -1,4 +1,4 @@
-int maxIterations = 100;
+int maxIterations = 50;
 float maxModulus = 500;
 
 void setup () {
@@ -7,7 +7,8 @@ void setup () {
 }
 
 void draw () {
-
+  
+  int iterations = 50 + 30 * sin(frameCount);
 
   loadPixels();
   for ( int x = 0; x < width; x += 1 ) {
@@ -27,7 +28,7 @@ void draw () {
       float green;
       float blue;
 
-      while (n < maxIterations) {
+      while (n < iterations) {
         float aa = a * a - b * b;
         float bb = 2 * a * b ;
 
@@ -42,9 +43,9 @@ void draw () {
       }
 
       // Normalize these values first
-      red = map(n, 0, maxIterations, 0, 1);
-      green = map(n, 0, maxIterations, 0, 1);
-      blue = map(n, 0, maxIterations, 0, 1);
+      red = map(n, 0, iterations, 0, 1);
+      green = map(n, 0, iterations, 0, 1);
+      blue = map(n, 0, iterations, 0, 1);
 
       red = map(sqrt(red), 0, 1, 0, 50 + map(red, 0, 100, 0, 100 + 100 * sin(frameCount * 0.1)));
       green = map(sqrt(green), 0, 1, 0, 150 + map(blue, 0, 100, 0, 35 + 25 * cos(frameCount * 0.1)));
